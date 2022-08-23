@@ -110,6 +110,18 @@ include(TEMPLATEPATH . '/inc/introducao.php');
 	the_field('telefone', $contato)
 ?>
 
+Verificar se é a página
+
+if(is_page('sobre')) {
+
+}
+
+Não é a página
+if(!is_page('sobre')) {
+
+}
+
+
 15 - Terminar de adicionar os outros campos
 <?php echo date("Y"); ?> (Mostrar a data)
 

@@ -1,15 +1,15 @@
-<?php 
+<?php
 // Template Name: Home
-get_header()
+get_header();
 ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post();  ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<section class="introducao">
 			<div class="container">
-				<h1><?php the_field('titulo_introduçao') ?> </h1>
+				<h1><?php the_field('titulo_introducao'); ?></h1>
 				<blockquote class="quote-externo">
-					<p><?php the_field('quote_introduçao') ?></p>
-					<cite><?php the_field('citacao_introduçao') ?></cite>
+					<p><?php the_field('quote_introducao'); ?></p>
+					<cite><?php the_field('citacao_introducao'); ?></cite>
 				</blockquote>
 				<a href="/bikcraft/produtos/" class="btn">Orçamento</a>
 			</div>
@@ -46,7 +46,7 @@ get_header()
 			</ul>
 
 			<div class="call">
-				<p><?php the_field('chamada_produtos') ?></p>
+				<p><?php the_field('chamada_produtos'); ?></p>
 				<a href="/bikcraft/produtos/" class="btn btn-preto">Produtos</a>
 			</div>
 
@@ -56,19 +56,15 @@ get_header()
 		<section class="portfolio">
 			<div class="container">
 				<h2 class="subtitulo">Portfólio</h2>
-
-			<?php include(TEMPLATEPATH . "/inc/clientes-portfolio.php"); ?>
-
+				<?php include(TEMPLATEPATH . "/inc/clientes-portfolio.php"); ?>
 				<div class="call">
-					<p><?php the_field('chamada_portfolio') ?></p>
-					<a href="/bikcraft/portfolio" class="btn">Portfólio</a>
+					<p><?php the_field('chamada_portfolio'); ?></p>
+					<a href="/bikcraft/portfolio/" class="btn">Portfólio</a>
 				</div>
 			</div>
 		</section>
 
 		<?php include(TEMPLATEPATH . "/inc/qualidade.php"); ?>
-
-		<?php endwhile; else: endif; ?>
-
+<?php endwhile; else: endif; ?>
 
 <?php get_footer(); ?>
