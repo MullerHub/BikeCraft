@@ -2,4 +2,4 @@
 
 #### algum dia eu volto a fazer, meu código deu muito erro 😓
 
-### corrigo os erros, voltando pro projeto
+### corrigo os erros, em breve voltarei para este projeto
